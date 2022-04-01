@@ -39,7 +39,7 @@ function onload() {
     ctx.fillStyle = 'white';
     ctx.textAlign = 'center'
     ctx.fillText('Click anywhere to start', canvas.width/2, canvas.height/2);
-    ctx.textAlign = 'start
+    ctx.textAlign = 'start'
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
     (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
