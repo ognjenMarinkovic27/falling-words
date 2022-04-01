@@ -118,8 +118,8 @@ function draw(canvas, ctx) {
             var image = new Image();
             
             image.addEventListener('load',  () => {
-                    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
                     scream.play();
+                    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
                 }
             , false);
             image.src = './jeff.webp';
