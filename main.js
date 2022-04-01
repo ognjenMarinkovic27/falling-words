@@ -41,13 +41,14 @@ function onload() {
     ctx.textAlign = 'start'
 
 }
-
+var scream;
 function game() {
     shuffle(wordlist)
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
 
     var audio = new Audio('music.mp3');
+    scream = new Audio('coolstuff.wav');
 
     setTimeout(()=> {audio.play()}, 5000)
     
@@ -115,7 +116,7 @@ function draw(canvas, ctx) {
     for(let word of words) {
         if(word[2] > canvas.height || ind == wordlist.length) {
             var image = new Image();
-            var scream = new Audio('coolstuff.wav');
+            
             image.addEventListener('load',  () => {
                     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
                     scream.play();
