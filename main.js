@@ -47,6 +47,7 @@ function onload() {
 
 }
 var scream;
+var cool;
 function game() {
     shuffle(wordlist)
     var canvas = document.getElementById('canvas');
@@ -54,6 +55,7 @@ function game() {
 
     var audio = new Audio('music.mp3');
     scream = new Audio('coolstuff.wav');
+    cool = new Audio('coolstuff2.wav');
 
     setTimeout(()=> {audio.play()}, 5000)
     
@@ -124,6 +126,7 @@ function draw(canvas, ctx) {
             
             image.addEventListener('load',  () => {
                     scream.play();
+                    cool.play();
                     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
                 }
             , false);
