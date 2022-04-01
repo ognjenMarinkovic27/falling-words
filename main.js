@@ -41,7 +41,7 @@ function onload() {
     ctx.fillText('Click anywhere to start', canvas.width/2, canvas.height/2);
     ctx.textAlign = 'start'
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(navigator.userAgent)) {
         document.body.innerHTML = 'Please switch to a computer';
     }
 
